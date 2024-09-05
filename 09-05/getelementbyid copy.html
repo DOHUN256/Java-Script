@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Document Object</h1>
+<h2>The getElementById() Method</h2>
+
+<p id="demo"></p>
+
+<script>
+let hours = (new Date(0)).getHours(2);
+document.getElementById("demo").innerHTML = "안녕하세요"[0];
+
+let pi = 3.14159265;
+let radius= 10;
+let area = pi * radius * radius;
+let round = 2 * pi * radius;
+/*----계산식----*/
+document.getElementById("demo").innerHTML = (` 둘레: ${2 * pi * radius}`);
+document.getElementById("demo").innerHTML = (` 넓이: ${pi * radius * radius} `);
+
+/*----탑에변수선언----*/
+document.getElementById("demo").innerHTML = (` 둘레: ${round}`);
+document.getElementById("demo").innerHTML = (` 넓이: ${area} `);
+
+</script>
+
+</body>
+</html>
