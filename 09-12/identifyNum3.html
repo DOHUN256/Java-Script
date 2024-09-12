@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Document Object</h1>
+<h2>Identify Num</h2>
+
+<p id="demo"></p>
+
+<script>
+let date = new Date()
+let hours = date.getHours();
+if (hours < 11) {
+    document.getElementById("demo").innerHTML = "아침먹을시간.";
+} else if (hours < 15){
+    document.getElementById("demo").innerHTML = "점심먹을시간.";
+} else {
+    document.getElementById("demo").innerHTML = "저녁먹을시간."
+}
+</script>
+
+</body>
+</html>
