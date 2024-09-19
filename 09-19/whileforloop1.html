@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+    
+<body>
+
+
+    <h2>WhileForLoop</h2>
+<p>1부터 10까지 출력</p>
+<p id="demo"></p>
+<p>1부터 10까지 합 출력</p>
+<p id="demo2"></p>
+
+<script>
+let output ="   ";
+let sum = 0;
+for(let i=1 ; i<=100; i++) {
+    if (i%3==0){
+        console.log(i);
+        output = output + i +"   ";
+    }
+    sum = sum+ i;    
+}
+document.getElementById("demo").innerHTML = output;
+document.getElementById("demo2").innerHTML = sum;
+
+</script>
+
+</body>
+</html>

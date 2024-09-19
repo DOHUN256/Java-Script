@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+    
+<body>
+
+
+    <h2>WhileForLoop</h2>
+<p>while문</p>
+<p id="demo"></p>
+
+
+<script>
+let i = 0;
+let output ="   "
+let array = [52,273,32,65,103];
+
+while(i < array.length) {
+    console.log(i);
+    output = output + i +" 번째 출력: "+array[i]+"<br>";
+    i++;
+}
+document.getElementById("demo").innerHTML = output;
+</script>
+
+</body>
+</html>
