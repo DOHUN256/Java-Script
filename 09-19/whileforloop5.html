@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+    
+<body>
+
+
+    <h2>WhileForLoop</h2>
+<p>for문</p>
+<p id="demo"></p>
+
+
+<script>
+let output ="   "
+let array = [1,2,3,4,5,6];
+
+for(let i= array.length-1;i>=0; i=i-1) {
+    console.log(i);
+    output = output + i +" 번째 출력: "+array[i]+"<br>";
+}
+document.getElementById("demo").innerHTML = output;
+</script>
+
+</body>
+</html>
