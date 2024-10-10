@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<p id="demo1"></p>
+<script>
+    let input = Number(prompt("몇 팩토리얼입니까?"))
+    let calcul = 1;
+    function factorial(fac){
+        for(let i=1;i<=fac;i++){
+            calcul *= i;
+        }
+        return calcul;
+    }
+    document.getElementById("demo1").innerHTML = ("결과값: "+factorial(input));
+</script>
+</body>
+</html> 

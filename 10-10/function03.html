@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+    function add(x,y) {
+        return x+y;
+    }
+    function substract(x,y) {
+        return x-y;
+    }
+    let first = Number(prompt("첫번째 숫자를 입력하세요."));
+    let second = Number(prompt("두번째 숫자를 입력하세요."));
+    document.getElementById("demo3").innerHTML = ("두 수의 덧셈: "+add(first, second));
+    document.getElementById("demo4").innerHTML = ("두 수의 뺄셈: "+substract(10, 10));
+</script>
+</body>
+</html> 

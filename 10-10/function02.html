@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<script>
+    function multiply(x,y) {
+        return x*y;
+    }
+    function divide(x,y) {
+        
+        if (x,y!=0){
+            return x/y;
+        }
+        else{
+            return "0이 포함되어있습니다.";
+        } 
+    }
+    function add(x,y) {
+        return x+y;
+    }
+    function substract(x,y) {
+        return x-y;
+    }
+    document.getElementById("demo1").innerHTML = ("두 수의 곱셈: "+multiply(10, 10));
+    document.getElementById("demo2").innerHTML = ("두 수의 나눗셈: "+divide(10, 10));
+    document.getElementById("demo3").innerHTML = ("두 수의 덧셈: "+add(10, 10));
+    document.getElementById("demo4").innerHTML = ("두 수의 뺄셈: "+substract(10, 10));
+</script>
+</body>
+</html> 

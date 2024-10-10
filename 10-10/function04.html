@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<p id="demo3"></p>
+<script>
+        function multiply(x,y) {
+        return x*y;
+    }
+    function divide(x,y) {
+        
+        if (y==0){
+            return "0이 포함되어있습니다.";
+        }
+        else{
+            return x/y;
+        } 
+    }
+    function add(x,y) {
+        return x+y;
+    }
+    function substract(x,y) {
+        return x-y;
+    }
+    let first = Number(prompt("첫번째 숫자를 입력하세요."));
+    let second = Number(prompt("두번째 숫자를 입력하세요."));
+    let op = String(prompt("사칙연상(+,-,*,/)중 하나를 입력하세요."));
+    if (op == '+'){
+        document.getElementById("demo3").innerHTML = ("두 수의 덧셈: "+add(first, second));
+    }
+    if (op == '-' ){
+        document.getElementById("demo3").innerHTML = ("두 수의 뺄셈: "+substract(first, second));
+    }
+    if (op == '*' ){
+        document.getElementById("demo3").innerHTML = ("두 수의 곱셈: "+multiply(first, second));
+    }
+    if (op == '/' ){
+        document.getElementById("demo3").innerHTML = ("두 수의 나눗셈: "+divide(first, second));
+    }
+    
+</script>
+</body>
+</html> 

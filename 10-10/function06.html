@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<p id="demo1"></p>
+<script>
+	function callTenTimes(callback){
+    for (let i = 0; i < 10; i ++) {
+    	callback();
+        }
+    }
+    
+    callTenTimes(function() {
+    	document.getElementById("demo1").innerHTML = ('함수호출');
+        });
+   </script>
+</body>
+</html> 
