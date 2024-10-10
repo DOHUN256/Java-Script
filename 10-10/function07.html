@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<p id="demo1"></p>
+<script>
+   let height = Number(prompt("삼각형의 높이는?")) 
+   let width = Number(prompt("삼각형의 가로는?"))
+   function triangle(){
+        let extent = height * width * 0.5
+    return extent;
+   }
+   document.getElementById("demo1").innerHTML = "삼각형의 넓이는 " + triangle()
+</script>
+</body>
+</html> 
