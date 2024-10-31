@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<p id="demo"></p>
+<script>
+   let com = Math.floor((Math.random() * 3) + 1);
+   let user = parseInt(prompt("가위: 1 , 바위: 2, 보: 3 원하는 숫자 입력"));
+   if(com==1){
+    document.write("컴퓨터: 가위 ");
+   }
+   if(com==2){
+    document.write("컴퓨터: 바위 " );
+   }
+   if(com==3){
+    document.write("컴퓨터: 보 ");
+   }
+
+if(user==1){
+    document.write("유저: 가위");
+   }
+if(user==2){
+    document.write("유저: 바위" );
+   }
+if(user==3){
+    document.write("유저: 보");
+   }
+   document.write("<br>");
+if (user == com){
+    document.write("무승부");
+    document.write("<br>");
+}
+if (user == 1&&com==2){
+    document.write("패배");
+    document.write("<br>");
+}
+if (user == 1&&com==3){
+    document.write("승리");
+    document.write("<br>");
+}
+if (user == 2&&com==1){
+    document.write("승리");
+    document.write("<br>");
+}
+if (user == 2&&com==3){
+    document.write("패배");
+    document.write("<br>");
+}
+if (user == 3&&com==2){
+    document.write("승리");
+    document.write("<br>");
+}
+if (user == 3&&com==1){
+    document.write("패배");
+    document.write("<br>");
+}
+</script>
+</body>
+</html> 
