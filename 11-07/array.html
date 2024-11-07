@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<p id="demo"></p>
+<script>
+    let object = [{
+        name: '바나나',
+        price: 1200,
+        print: function() {
+            document.write(`${this.name}의 가격은 ${this.price}원 입니다.`);
+            document.write("<br>");
+        }},{
+        name: '고구마',
+        price: 400,
+        print: function() {
+            document.write(`${this.name}의 가격은 ${this.price}원 입니다.`);
+            document.write("<br>");
+        }},{
+        name: '사과',
+        price: 2000,
+        print: function() {
+            document.write(`${this.name}의 가격은 ${this.price}원 입니다.`);
+            document.write("<br>");
+        }},{
+        name: '배',
+        price: 3000,
+        print: function() {
+            document.write(`${this.name}의 가격은 ${this.price}원 입니다.`);
+            document.write("<br>");
+        }
+
+    }];
+for(let i in object){
+    object[i].print();
+}
+</script>
+</body>
+</html> 
