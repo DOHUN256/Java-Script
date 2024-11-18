@@ -17,3 +17,27 @@ a {
     color: inherit;
     text-decoration: none;
 }
+header{
+    background-color: lightgray;
+}
+#main-logo{
+    width:30px;
+
+}
+main{
+    background: #f2f4f7;
+    min-height: 700px;
+}
+footer{
+    background-color: darkgray;
+    height:310px;
+}
+.top-bar{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    height: 81px;
+}
+.con{
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
