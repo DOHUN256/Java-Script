@@ -19,6 +19,13 @@ a {
 }
 header{
     background-color: lightgray;
+    padding: 1rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .logo{
     width:50px;
@@ -34,16 +41,32 @@ footer{
 }
 .top-bar{
     border-bottom: 1px solid rgba(0,0,0,0.1);
-    height: 81px;
+    height: 50px;
 }
 .con{
     width: 1080px;
     margin-left: auto;
     margin-right: auto;
 }
-.flex{
+.menu-bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-}
-.items-center {
-    align-items: center;
+    justify-content: flex-start;
+    background-color: #333;
+  }
+.menu-bar li {
+    flex-grow: 0;
+    margin: 0;
+    padding: 0;
+  }
+.menu-bar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+  }
+
+.menu-bar a:hover{
+    background-color: #f2f4f7;
 }
