@@ -7,8 +7,14 @@
 html > body {
     font-family: 'GmarketSansMedium';
 }
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+}
 
-body, ul, li {
+ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -31,13 +37,19 @@ header{
     width:50px;
     height:50px;
 }
+.flex{
+    flex:1;
+}
 main{
     background: #f2f4f7;
-    min-height: 700px;
+    min-height: 2000px;
+    margin-top: 81px;
+
 }
 footer{
     background-color: darkgray;
     height:310px;
+    text-align: center;
 }
 .top-bar{
     border-bottom: 1px solid rgba(0,0,0,0.1);
