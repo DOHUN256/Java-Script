@@ -46,6 +46,8 @@ header{
 .items-center{
     align-items: center;
 }
+
+
 main{
     background: #f2f4f7;
     display: flex;
@@ -58,6 +60,8 @@ footer{
     text-align: center;
     margin-top: auto;
 }
+
+
 .top-bar{
     border-bottom: 1px solid rgba(0,0,0,0.1);
     height: 50px;
@@ -67,28 +71,62 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
-.menu-bar {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    background-color: #333;
-  }
-.menu-bar li {
-    flex-grow: 0;
-    margin: 0;
-    padding: 0;
-  }
-.menu-bar a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-  }
 
-.menu-bar a:hover{
-    background-color: #f2f4f7;
+.nav-menu {
+    margin-right: 2rem;
 }
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu {
+    white-space: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* IE, Edge에서 스크롤바 숨기기 */
+    scrollbar-width: none; /* Firefox에서 스크롤바 숨기기 */
+}
+
+.nav-menu::-webkit-scrollbar {
+    display: none; /* Chrome, Safari에서 스크롤바 숨기기 */
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .nav-menu ul {
+        justify-content: flex-start;
+        width: max-content;
+    }
+}
+
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.menu-item i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.menu-item span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.menu-item:hover {
+    color: #666;
+}
+
 .slider {
     width: 100%;
     overflow: hidden;
