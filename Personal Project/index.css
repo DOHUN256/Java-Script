@@ -40,6 +40,9 @@ header{
 .flex{
     flex:1;
 }
+.items-center{
+    align-items: center;
+}
 main{
     background: #f2f4f7;
     min-height: 2000px;
