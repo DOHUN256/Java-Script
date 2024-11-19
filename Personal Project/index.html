@@ -22,15 +22,11 @@
                     <i class="fas fa-user"></i>
                     <span>메모 저장</span>
                 </li>
-                <li class="menu-item">
-                    <i class="fas fa-code"></i>
-                    <span>주식 투자 시뮬레이션</span>
-                </li>
             </ul>
         </nav>
     </header>
     <main class="flex">
-        <div class="slider">
+        <div class="slider" id="home-section">
             <div class="welcome-text">
                 <div class="main-title">Welcome My Site</div>
                 <div class="sub-title">- JavaScript Project -</div>
@@ -41,6 +37,35 @@
               <img src="image3.jpg" alt="Slide 3">
             </div>
           </div>
+              <!-- 새로운 타이머 섹션 -->
+    <div class="timer-section" id="timer-section" style="display: none;">
+        <div class="timer-container">
+            <div class="current-time"></div>
+            <div class="stopwatch">
+                <div class="time-display">00:00:00</div>
+                <div class="controls">
+                    <button id="start">시작</button>
+                    <button id="stop">정지</button>
+                    <button id="reset">리셋</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 메모 섹션 -->
+<div class="memo-section" id="memo-section" style="display: none;">
+    <div class="memo-container">
+        <h2>메모장</h2>
+        <div class="memo-input-container">
+            <input type="text" id="memo-title" placeholder="제목을 입력하세요" />
+            <textarea id="memo-content" placeholder="내용을 입력하세요"></textarea>
+            <button id="save-memo">저장</button>
+        </div>
+        <div class="memo-list">
+            <h3>저장된 메모</h3>
+            <div id="saved-memos"></div>
+        </div>
+    </div>
+</div>
     </main>
     <footer>하단</footer>   
     <script src="index.js"></script> 
