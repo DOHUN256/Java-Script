@@ -11,7 +11,9 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
+    min-width: 100vh;
     flex-direction: column;
+    display: flex;
 }
 
 ul, li {
@@ -32,6 +34,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 .logo{
     width:50px;
@@ -45,14 +48,15 @@ header{
 }
 main{
     background: #f2f4f7;
-    min-height: 2000px;
-    margin-top: 81px;
-
+    display: flex;
+    flex-direction: column;
 }
 footer{
-    background-color: darkgray;
-    height:310px;
+    background-color: lightblue;
+    min-height: 30vh;
+    flex: 1;
     text-align: center;
+    margin-top: auto;
 }
 .top-bar{
     border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -84,4 +88,48 @@ footer{
 
 .menu-bar a:hover{
     background-color: #f2f4f7;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    height: 100%;
+}
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+/* 메인 제목 스타일 */
+.main-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem; /* 제목과 소제목 사이 간격 */
+}
+
+/* 소제목 스타일 */
+.sub-title {
+    color: lightgray;
+    font-size: 1.5rem; /* 메인 제목보다 작은 크기 */
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
