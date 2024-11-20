@@ -1,3 +1,4 @@
+//페이지 로드되자마자 실행
 document.addEventListener('DOMContentLoaded', function() {
     // 섹션을 변수로 지정
     const slides = document.querySelector('.slides');
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
 document.querySelectorAll('.menu-item').forEach(item => {
     //메뉴바 아이템에 클릭시 이벤트를 넣어 페이지를 이동시키게 만들기
     item.addEventListener('click', function() {
@@ -79,6 +81,8 @@ document.querySelectorAll('.menu-item').forEach(item => {
         }
     });
 });
+
+
 function Timer() {
     // 현재 시간 표시
     const currentTimeDiv = document.querySelector('.current-time');
