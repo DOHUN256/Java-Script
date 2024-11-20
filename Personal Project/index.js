@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // 섹션을 변수로 지정
     const slides = document.querySelector('.slides');
     const images = document.querySelectorAll('.slides img');
+    
+    // 슬라이드 페이지 수를 체크할 변수
     let currentSlide = 0;
     
     // 첫 번째 이미지의 복사본을 마지막에 추가
@@ -28,11 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 로고 클릭 시 홈 섹션으로 이동
     document.querySelector('.logo').addEventListener('click', function() {
+        // 섹션을 변수로 지정
         const homeSection = document.getElementById('home-section');
         const timerSection = document.getElementById('timer-section');
         const memoSection = document.getElementById('memo-section');
 
-        // 모든 섹션 숨기기
+        // 모든 섹션 숨기기.... 숨겨놓고 클릭시 반응형으로 표시하는 식으로
         timerSection.style.display = 'none';
         memoSection.style.display = 'none';
         
@@ -42,11 +46,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.querySelectorAll('.menu-item').forEach(item => {
+    //메뉴바 아이템에 클릭시 이벤트를 넣어 페이지를 이동시키게 만들기
     item.addEventListener('click', function() {
+        //어떤 메뉴를 눌렀는지 확인하기 위한 text 변수
         const text = this.querySelector('span').textContent;
+        //각 페이지 마다 아이디 이름을 할당
         const homeSection = document.getElementById('home-section');
         const timerSection = document.getElementById('timer-section');
-        const memoSection = document.getElementById('memo-section'); // 추가
+        const memoSection = document.getElementById('memo-section');
 
         // 모든 섹션 숨기기
         homeSection.style.display = 'none';
@@ -56,10 +63,12 @@ document.querySelectorAll('.menu-item').forEach(item => {
         switch(text) {
             case '타이머':
                 timerSection.style.display = 'flex';
+                //body 안에 있는 메인에 타이머 섹션 표시 후 함수호출
                 initTimer();
                 break;
             case '메모 저장':
                 memoSection.style.display = 'flex';
+                //body 안에 있는 메인에 메모 섹션 표시 후 함수호출
                 initMemo();
                 break;
             default:
@@ -72,7 +81,9 @@ function initTimer() {
     // 현재 시간 표시
     const currentTimeDiv = document.querySelector('.current-time');
     function updateCurrentTime() {
+        //Date 객체 불러오기        
         const now = new Date();
+        //현재시간 불러와서 텍스트에 넣기
         currentTimeDiv.textContent = now.toLocaleTimeString();
     }
     updateCurrentTime();
@@ -90,9 +101,10 @@ function initTimer() {
         const hours = Math.floor(seconds / 3600);
         const minutes = Math.floor((seconds % 3600) / 60);
         const secs = seconds % 60;
+        //가져온 시간 값들을 텍스트에 표시
         timeDisplay.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
     }
-
+    //버튼 기능 설정
     startBtn.addEventListener('click', () => {
         clearInterval(timeInterval);
         timeInterval = setInterval(() => {
