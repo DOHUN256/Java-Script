@@ -1,3 +1,90 @@
+.header {
+    width: 1920px;
+    height: 90px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.header img {
+    height: 70px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 48px; /* 메뉴 항목 사이 간격 */
+}
+
+.menu-item {
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--unnamed-color-000000);
+    font-family: var(--unnamed-font-family-pretendard);
+}
+
+.main {
+    width: 100%;
+    height: 2700px;
+    background-image: url('main-background.jpg');
+    background-size: contain;
+    background-position: 0 90px; 
+    background-repeat: no-repeat;
+    padding: 90px 200px;
+    box-sizing: border-box;
+}
+
+.main-text {
+    position: relative;
+    top: 200px;
+    left: 200px;
+    padding-top: 70px;
+    opacity: 0; /* 초기에는 투명하게 */
+    animation: fadeIn 5s ease-in forwards; /* 페이드인 애니메이션 적용 */
+    z-index: 1;
+}
+.main-title {
+    font-family: var(--unnamed-font-family-pretendard);
+    font-size: 100px;
+    color: #000000; /* 기본 텍스트 색상을 검정으로 변경 */
+    margin-bottom: 60px;
+}
+
+.main-subtitle {
+    font-family: var(--unnamed-font-family-pretendard);
+    font-size: 60px;
+    color: #000000;
+}
+.main-title .highlight {
+    color: #2E7D32; /* EcoME 텍스트만 초록색으로 설정 */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
 :root {
 
     /* Colors: */
@@ -77,3 +164,4 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     color: var(--unnamed-color-000000);
     }
+
