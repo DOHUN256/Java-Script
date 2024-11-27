@@ -171,6 +171,14 @@ body {
     font-family: var(--unnamed-font-family-pretendard);
     font-size: 30px;
 }
+.answer-result span {
+    color: #FF7043;
+}
+
+.answer-final .eco-highlight {
+    color: #2E7D32;
+    font-weight: bold;
+}
 
 .hidden {
     display: none;
