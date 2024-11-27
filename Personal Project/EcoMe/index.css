@@ -138,6 +138,57 @@ body {
 .main-title .highlight {
     color: #2E7D32; /* EcoME 텍스트만 초록색으로 설정 */
 }
+.answer-button {
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    background-color: #FF7043;
+    border: none;
+    color: white;
+    font-family: var(--unnamed-font-family-pretendard);
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.answer-text {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.answer-result {
+    font-family: var(--unnamed-font-family-pretendard);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.answer-explanation {
+    font-family: var(--unnamed-font-family-pretendard);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.answer-question {
+    font-family: var(--unnamed-font-family-pretendard);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.answer-final {
+    font-family: var(--unnamed-font-family-pretendard);
+    font-size: 30px;
+    color: #2E7D32;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
 
 .footer {
     width: 100vw;
