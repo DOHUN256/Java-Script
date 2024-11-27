@@ -254,6 +254,26 @@ body {
     text-align: center;
     line-height: 1.5;
 }
+.quiz-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;  /* info-boxes로부터의 간격 */
+    margin-bottom: 200px;  /* bottom-info 로고와의 간격 */
+}
+
+.quiz-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.quiz-text {
+    font-family: var(--unnamed-font-family-pretendard);
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+}
 
 
 
