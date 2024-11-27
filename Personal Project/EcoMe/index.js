@@ -2,8 +2,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const answerButton = document.querySelector('.answer-button');
     const answerText = document.querySelector('.answer-text');
 
-    // 메뉴바를 제외하고 페이드인 효과를 적용할 요소들 선택
-    const fadeElements = document.querySelectorAll('.main-text, .info-section, .quiz-section, .bottom-info');
+    // 페이드인 효과를 적용할 요소들 선택 (더 구체적인 선택자 추가)
+    const fadeElements = document.querySelectorAll(`
+        .main-text,
+        .main-title,
+        .main-subtitle,
+        .info-section,
+        .info-title,
+        .info-box,
+        .quiz-section,
+        .gray-box-text,
+        .gray-box-subtext,
+        .answer-button,
+        .answer-text,
+        .bottom-info,
+        .footer
+    `);
     
     // 각 요소에 fade-in 클래스 추가
     fadeElements.forEach(element => {
