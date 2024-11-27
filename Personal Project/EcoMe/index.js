@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .answer-button,
         .answer-text,
         .bottom-info,
-        .footer
     `);
     
     // 각 요소에 fade-in 클래스 추가
