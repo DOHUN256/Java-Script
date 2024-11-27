@@ -85,6 +85,7 @@ body {
 .gray-box-text {            /* 추가된 클래스 */
     font-family: var(--unnamed-font-family-pretendard);
     font-size: 60px;
+    font-weight: 600;
     text-align: center;
     color: #000000;
 }
