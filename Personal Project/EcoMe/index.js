@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const answerText = document.querySelector('.answer-text');
 
     // 메뉴바를 제외하고 페이드인 효과를 적용할 요소들 선택
-    const fadeElements = document.querySelectorAll('.main-text, .info-section, .quiz-section, .bottom-info, .footer');
+    const fadeElements = document.querySelectorAll('.main-text, .info-section, .quiz-section, .bottom-info');
     
     // 각 요소에 fade-in 클래스 추가
     fadeElements.forEach(element => {
