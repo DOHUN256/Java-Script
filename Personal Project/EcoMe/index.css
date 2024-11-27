@@ -89,6 +89,14 @@ body {
     text-align: center;
     color: #000000;
 }
+
+.gray-box-subtext {           /* 추가: 새로운 텍스트 스타일 */
+    font-family: var(--unnamed-font-family-pretendard);
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+}
+
 .main-text {
     position: relative;
     top: 200px;
