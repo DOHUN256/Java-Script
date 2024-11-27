@@ -169,16 +169,9 @@ body {
     margin-bottom: 20px;
 }
 
-.answer-question {
-    font-family: var(--unnamed-font-family-pretendard);
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
 .answer-final {
     font-family: var(--unnamed-font-family-pretendard);
     font-size: 30px;
-    color: #2E7D32;
 }
 
 .hidden {
