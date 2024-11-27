@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .fade-in-text {
+    opacity: 0; /* 처음에는 투명하게 */
+    transform: translateY(20px); /* 살짝 아래에서 시작 */
+    animation: fadeIn 2s ease-out forwards; /* 애니메이션 실행 */
+  }
+  
+  /* 애니메이션 키프레임 */
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* 완전히 보이도록 */
+      transform: translateY(0); /* 원래 위치로 이동 */
+    }
+  }
+  
