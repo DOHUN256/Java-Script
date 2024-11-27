@@ -62,7 +62,7 @@ body {
     flex-direction: column;  /* 추가 */
     justify-content: center; /* 추가 */
     align-items: center;     /* 추가 */
-    padding-top: 100px;      /* 추가 */
+    padding-top: 180px;      /* 추가 */
 }
 
 .gray-box {
