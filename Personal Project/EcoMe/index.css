@@ -268,13 +268,20 @@ body {
     margin-bottom: 20px;
 }
 
-.quiz-text {
+.quiz-button {
+    padding: 10px 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
     font-family: var(--unnamed-font-family-pretendard);
     font-size: 24px;
     color: #000000;
-    text-align: center;
 }
 
+.quiz-button:hover {
+    background-color: #f5f5f5;  /* 호버 효과 추가 */
+}
 
 
 
