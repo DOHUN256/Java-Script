@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .gray-box-subtext,
         .answer-button,
         .answer-text,
-        .bottom-info,
+        .bottom-info
     `);
     
     // 각 요소에 fade-in 클래스 추가
