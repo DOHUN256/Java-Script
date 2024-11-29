@@ -1,10 +1,10 @@
 const quizData = [
   {
     id: "refrigerator_1",
-    subtitle: "1.냉장실의 적정 내용물은?",
+    subtitle: "1. 냉장실은 몇 % 정도 채워져 있는게 가장 효율적일까요?",
     imgLeft: "./img/Quiz 1-1.png",
     imgRight: "./img/Quiz 1-2.png",
-    correctAnswer: "O",
+    correctAnswer: "X",
     correctMessage:
       "<span style='color: #2E7D32;'>정답</span>입니다! <br/> <span style='color: #FF7043;'>냉장실</span>는 <span style='color: #FF7043;'>60~70%</span>만 채우는 게 좋습니다!<br/> Tip. 반면에 <span style='color: #3941AF;'>냉동실</span>은 <span style='color: #3941AF;'>80~90%</span> 채우는 편이 에너지 절약에 도움이 된다고 합니다!",
     incorrectMessage:
@@ -12,7 +12,7 @@ const quizData = [
   },
   {
     id: "refrigerator_2",
-    subtitle: "2.냉장고의 온도를 낮게 설정할수록 전기를 절약할 수 있다.",
+    subtitle: "2. 냉장고의 온도를 낮게 설정할수록 전기를 절약할 수 있다.",
     imgLeft: "./img/Quiz 2-1.jpg",
     imgRight: "./img/Quiz 2-2.jpg",
     correctAnswer: "X",
@@ -23,7 +23,7 @@ const quizData = [
   },
   {
     id: "refrigerator_3",
-    subtitle: "3.냉장고 외부를 청소하는 것은 에너지 효율에 큰 영향을 준다.",
+    subtitle: "3. 냉장고 외부를 청소하는 것은 에너지 효율에 큰 영향을 준다.",
     imgLeft: "./img/Quiz 3-1.jpg",
     imgRight: "./img/Quiz 3-2.jpg",
     correctAnswer: "O",
@@ -34,7 +34,7 @@ const quizData = [
   },
   {
     id: "refrigerator_4",
-    subtitle: "4.출근할 때 외출 시 전력 차단 버튼을 누르면 에너지 효율에 도움이 된다.",
+    subtitle: "4. 출근할 때 외출 시 전력 차단 버튼을 누르면 에너지 효율에 도움이 된다.",
     imgLeft: "./img/Quiz 4-1.jpg",
     imgRight: "./img/Quiz 4-2.jpg",
     correctAnswer: "X",
@@ -45,7 +45,7 @@ const quizData = [
   },
   {
     id: "refrigerator_5",
-    subtitle: "5.LED 조명은 일반 백열등보다 매우 효율적이다.",
+    subtitle: "5. LED 조명은 일반 백열등보다 매우 효율적이다.",
     imgLeft: "./img/Quiz 5-1.jpg",
     imgRight: "./img/Quiz 5-2.jpg",
     correctAnswer: "O",
@@ -56,7 +56,7 @@ const quizData = [
   },
   {
     id: "refrigerator_6",
-    subtitle: "6.온수세탁은 에너지 효율이 찬물세탁보다 좋다.",
+    subtitle: "6. 온수세탁은 에너지 효율이 찬물세탁보다 좋다.",
     imgLeft: "./img/Quiz 6-1.jpg",
     imgRight: "./img/Quiz 6-2.jpg",
     correctAnswer: "X",
@@ -67,7 +67,7 @@ const quizData = [
   },
   {
     id: "refrigerator_7",
-    subtitle: "7.전기 난로는 가스 난로보다 에너지 효율이 높다.",
+    subtitle: "7. 전기 난로는 가스 난로보다 에너지 효율이 높다.",
     imgLeft: "./img/Quiz 7-1.jpg",
     imgRight: "./img/Quiz 7-2.jpg",
     correctAnswer: "X",
@@ -78,7 +78,7 @@ const quizData = [
   },
   {
     id: "refrigerator_8",
-    subtitle: "8.전기 난로보다 전기 담요가 전력 소비량이 훨씬 적다. ",
+    subtitle: "8. 전기 난로보다 전기 담요가 전력 소비량이 훨씬 적다. ",
     imgLeft: "./img/Quiz 8-1.jpg",
     imgRight: "./img/Quiz 8-2.jpg",
     correctAnswer: "O",
@@ -89,7 +89,7 @@ const quizData = [
   },
   {
     id: "refrigerator_9",
-    subtitle: "9.스마트 플러그는 대기 전력을 완전히 없애준다.",
+    subtitle: "9. 스마트 플러그는 대기 전력을 완전히 없애준다.",
     imgLeft: "./img/Quiz 9-1.jpg",
     imgRight: "./img/Quiz 9-2.jpg",
     correctAnswer: "O",
@@ -100,7 +100,7 @@ const quizData = [
   },
   {
     id: "refrigerator_10",
-    subtitle: "10.세탁물이 완전 마른 상태에서 다림질 하면 전기가 덜 소비된다.",
+    subtitle: "10. 세탁물이 완전 마른 상태에서 다림질 하면 전기가 덜 소비된다.",
     imgLeft: "./img/Quiz 10-1.jpg",
     imgRight: "./img/Quiz 10-2.jpg",
     correctAnswer: "X",
@@ -111,7 +111,7 @@ const quizData = [
   },
   {
     id: "refrigerator_11",
-    subtitle: "11.식기세척기를 가득 채우면 에너지가 매우 비효율적으로 사용된다.",
+    subtitle: "11. 식기세척기를 가득 채우면 에너지가 매우 비효율적으로 사용된다.",
     imgLeft: "./img/Quiz 11-1.jpg",
     imgRight: "./img/Quiz 11-2.jpg",
     correctAnswer: "X",
@@ -131,15 +131,6 @@ gtag("js", new Date());
 
 gtag("config", "G-FH2ZMMFC4X");
 
-// 버튼 클릭 이벤트로 문제 섹션 표시
-document.getElementById("startButton").addEventListener("click", function () {
-  // 문제풀기 버튼 숨기기
-  document.getElementById("startButtonContainer").classList.add("hidden");
-
-  // 문제 섹션 보이기
-  document.getElementById("comparisonSection").classList.remove("hidden");
-});
-
 let currentQuizIndex = 0;
 
 function loadQuiz() {
@@ -151,9 +142,9 @@ function loadQuiz() {
   // 이미지 변경
   const images = document.querySelectorAll(".fridge-image");
   images[0].src = quiz.imgLeft;
-  images[0].setAttribute("onclick", `recordAnswer('${quiz.id}', 'X')`);
+  images[0].setAttribute("onclick", `recordAnswer('${quiz.id}', 'O')`);
   images[1].src = quiz.imgRight;
-  images[1].setAttribute("onclick", `recordAnswer('${quiz.id}', 'O')`);
+  images[1].setAttribute("onclick", `recordAnswer('${quiz.id}', 'X')`);
 }
 
 function recordAnswer(questionId, answer) {
