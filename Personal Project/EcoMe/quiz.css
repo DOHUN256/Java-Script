@@ -1,0 +1,193 @@
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: white; /* 배경색 */
+  color: #333;
+  background: url(/img/bg.jpg) no-repeat center/cover;
+}
+
+/* 컨테이너: 화면 꽉 채우기 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* 헤더 */
+.header {
+  background-color: white;
+  height: 90px;
+  border-bottom: 3px solid #dcdcdc;
+  text-align: center;
+  width: 100%;
+}
+.header {
+  width: 1920px;
+  height: 90px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header img {
+  height: 70px;
+  width: auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 48px; /* 메뉴 항목 사이 간격 */
+}
+
+.menu-item {
+  font-size: 17px;
+  text-decoration: none;
+  color: var(--unnamed-color-000000);
+  font-family: var(--unnamed-font-family-pretendard);
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #dcdcdc;
+}
+
+#comparisonSection {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  align-items: center; /* 중앙 정렬 */
+  justify-content: flex-start; /* 상단 정렬 */
+  width: 100%;
+}
+/* 부제목 */
+.subtitle {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  color: black;
+}
+
+/* 비교 섹션 */
+.comparison {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* 이미지 컨테이너 */
+.image-container {
+  position: relative;
+  margin-top: 40px;
+  flex: 1; /* 이미지가 화면 너비에 비례해 확장 */
+  max-width: 600px;
+}
+
+.fridge-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* VS 섹션 */
+.vs-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.vs-box {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.vs-box p {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 반투명 검정색 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 팝업 콘텐츠 */
+.popup-content {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.popup-overlay.hidden {
+  display: none;
+}
+.popup-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #5eab5e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #489148;
+}
+/* 숨김 클래스 */
+.hidden {
+  display: none;
+}
+
+.succ {
+  color: #ff7043;
+}
+
+.diff {
+  color: #3941af;
+}

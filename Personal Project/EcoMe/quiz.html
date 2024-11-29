@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>냉장고 적정 내용물</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FH2ZMMFC4X"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 상단 로고와 제목 -->
+      <div class="header">
+        <a href="index.html"><img src="logo.svg" alt="EcoMeLogo"></a>
+        <nav class="menu">
+            <a href="quiz.html" class="menu-item">에너지 퀴즈</a>
+            <a href="#" class="menu-item">정보 사이트</a>
+            <a href="Inform-menu.html" class="menu-item">에너지 인포그래픽</a>
+        </nav>
+    </div>
+    <div id="startButtonContainer" class="button-container">
+        <button id="startButton">문제풀기</button>
+      </div>
+      <div id="comparisonSection" class="comparison hidden">
+        <h2 class="subtitle">냉장고의 적정 내용물은?</h2>
+            <div class="comparison">
+                <div class="image-container">
+                    <img
+                    src=""
+                    alt="왼쪽 이미지"
+                    class="fridge-image"
+                    />
+                </div>
+                <div class="vs-container">
+                    <div class="vs-box">
+                    <p>VS</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img
+                    src=""
+                    alt="오른쪽 이미지"
+                    class="fridge-image"
+                    />
+                </div>
+            </div>
+                <div id="popupOverlay" class="popup-overlay hidden">
+                    <div class="popup-content">
+                        <p id="popupMessage"></p>
+                        <button id="closePopup">다음 문제</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+
+  </body>
+</html>
